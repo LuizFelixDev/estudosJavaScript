@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliador de Nacionalidade</title>
+</head>
+<body>
+    <h1>Avaliador de Nacionalidade</h1>
+    <p>Vamos te julgar de acordo com sua nacionalidade!</p>
+    Digite sua nacionalidade: <input type="text" name="texton" id="texton">
+    <input type="button" value="Confimar" onclick = "leNacionalidade()">
+    <div id="res">
+
+    </div>
+    <script>
+        function leNacionalidade(){
+            var nacio = window.document.getElementById('texton')
+            var res = window.document.querySelector('div#res')
+            nacio = nacio.value
+            if(nacio == 'BR'){
+            res.innerHTML = ('<p>Você é Brasileiro!</p>')
+            }
+            else {
+            res.innerHTML = ('<p>Você é um gringo véi <strong>azedo!</strong></p>')
+            }
+
+        }
+        
+    </script>
+</body>
+</html>
