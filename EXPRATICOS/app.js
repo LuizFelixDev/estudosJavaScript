@@ -9,8 +9,7 @@ function adicionar(){
 }
 
 function refazer(){
-    lista = lista.set()
-    lista = lista.sort()
-
-    
+    lista = Array.from(new Set(lista))
+    listaRef = window.document.getElementById('refe')
+    listaRef.innerHTML = "Lista refeita = " + lista
 }
