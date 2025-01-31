@@ -10,6 +10,8 @@ function adicionar(){
 
 function refazer(){
     lista = Array.from(new Set(lista))
+    lista = lista.sort((a, b) => a - b)
+    
     listaRef = window.document.getElementById('refe')
     listaRef.innerHTML = "Lista refeita = " + lista
 }
