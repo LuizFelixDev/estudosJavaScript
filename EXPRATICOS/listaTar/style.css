@@ -7,8 +7,35 @@ body{
 .title{
     font-size: 45px;
     color: #00BFFF;
+    text-shadow: 0 0 5px #00bfff, 0 0 10px #05e2ff, 0 0 20px #000000;
+    font-size: 3rem; 
 }
 .list-item {
-    margin-bottom: 24px;
+    margin-bottom: 30px;
     font-size: 20px;
+    font-family: monospace;
+}
+
+.barra {
+    height: 32px;
+    background-color: transparent;
+    color: white;
+    border-color: #00BFFF;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: monospace;
+    padding: 8px;
+}
+
+.botao{
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    border-color: #00BFFF;
+    color: white;
+}
+
+li{
+    margin-bottom: 20px;
 }

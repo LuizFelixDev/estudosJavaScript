@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de tarefas</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
 <body>
 
     <div>
         <h1 class="title">Tarefas do dia 4 de Fevereiro</h1>
-        <ul>
+        <ul class="list-item" id="minhaLista">
             <li class="list-item">Estudar JavaScript</li>
             <li class="list-item">Estudar HTML e CSS</li>
             <li class="list-item">Estudar Autocad</li>
@@ -18,9 +19,15 @@
         </ul>
     </div>
     <div>
-        <input type="text">
-        <input type="button" value="adicionar">
+        <input class="barra" type="text" id="item">
+        <input class="botao" type="button" value="adicionar" onclick="adicionar()">
     </div>
+    <div>
+        <br>
+        <br>
+        <input class="botao" type="button" value="Limpar lista" onclick="limpar()">
+    </div>
+
 
 </body>
 </html>
